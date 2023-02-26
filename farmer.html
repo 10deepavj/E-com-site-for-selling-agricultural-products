@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 40px;
+        background-image: linear-gradient(
+          to right top,
+          #fbeef6,
+          #ffdce5,
+          #ffceb8,
+          #ffcd7f,
+          #e4d84f,
+          #badb4e,
+          #89dd5a,
+          #3edd70,
+          #39d57d,
+          #3acd87,
+          #41c48f,
+          #4cbb94
+        );
+      }
+      * {
+        box-sizing: border-box;
+      }
+      input {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+      }
+      .type {
+        border-radius: 10px;
+        border: 1px solid #eee;
+        transition: 0.3s border-color;
+      }
+      .design {
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        color: #000;
+        background: #fff;
+        line-height: 30px;
+        border-radius: 40px;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+          rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+        transition: all 0.2s;
+      }
+      design:hover {
+        box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
+          rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+        transform: scale(1.01);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Upload Products</h1>
+    <form>
+      Upload picture:<input type="file" class="type" name="filename" />
+      Price:<input type="text" class="type" /> Kg's:<input
+        type="text"
+        class="type"
+      />
+      Product Name:<input type="text" class="type" /> Seller name:<input
+        type="text"
+        class="type"
+      />
+      Location:<input type="text" class="type" /> Mobile no:<input
+        type="number"
+        class="type"
+      />
+      <br />
+      <p><button class="design">Submit</button></p>
+      <a href="main.html">Back to home page</a>
+    </form>
+  </body>
+</html>
